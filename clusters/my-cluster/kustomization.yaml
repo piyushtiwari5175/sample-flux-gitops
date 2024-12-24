@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: "/manifests"  # Path to the manifests directory relative to flux-system
+  path: "./manifests"  # Path to the manifests directory relative to flux-system
   prune: true
   sourceRef:
     kind: GitRepository
