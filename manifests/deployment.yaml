@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  namespace: flux-system  # Add this line to specify the namespace
 spec:
   replicas: 1
   selector:
@@ -17,4 +18,3 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-
